@@ -6,6 +6,7 @@
     
     20%, 80% {
       transform: translate3d(2px, 0, 0);
+      transition:1s;
     }
   
     30%, 50%, 70% {
@@ -16,6 +17,33 @@
       transform: translate3d(4px, 0, 0);
     }
   }
+
+
+  @keyframes moveLeft {
+      0%{
+        transform: translateX(0vw);
+      }
+      50%{
+       
+      }
+      100%{
+        transform: translateX(60vw);
+
+      }
+  }
+  @keyframes moveRight {
+    0%{
+      transform: translateX(0vw);
+    }
+    50%{
+        height:420px;
+
+    }
+    100%{
+      transform: translateX(-70vw);
+
+    }
+}
 /* mediaQeuries */
 
 body {
@@ -45,28 +73,30 @@ body {
 .pTwoHp {
   border: solid yellow;
   border-width:.2px;
-  border-radius: 22px;
+  /* border-radius: 22px; */
   color:lime;
   margin:22px;
-  margin-top:10%;
-  /* width:20px; */
+  margin-top:0%;
+  width:30px;
   height:150px;
 }
 
 .hpTop,
 .hpMid,
 .hpLow {
-    height:23%;
+    height:30%;
   /* background-image:url('https://media1.giphy.com/media/iebqkcA0GBBjHFKROw/giphy.gif'); */
   /* border:solid darkgoldenrod; */
-  /* background-color:yellow; */
-  border-radius: 22px;
+  background-color:yellow;
+  /* border-radius: 22px; */
   padding:.2em;
   /* color:black; */
 
 }
 .scoreboard {
-  font-size: 9px;
+  font-size: 19px;
+  display:flex;
+  justify-content: space-around;
 }
 .actionBubble {
   border: solid purple;
@@ -89,7 +119,7 @@ body {
   margin-left: 40%;
   display: block;
 }
-.points {
+.points,.points2 {
   color: yellow;
   font-size: 42px;
   font-family: courier;
@@ -113,6 +143,9 @@ body {
   
 
 }
+.showIt{
+    display: block;
+}
 
 .controlPanel{
     border:solid purple;
@@ -129,8 +162,9 @@ body {
     border:solid red;
     border-radius:22px;
     background-color: #333C3F;;
-    width:20%;
+    width:25%;
     margin:1em;
+    margin-left:10%;
     padding:1em;
 }
 .settingsContainer{
@@ -143,8 +177,8 @@ body {
 .setBtn{
     border:solid black;
     margin-left:1em;
-    height:20px;
-    width:75px;
+    height:50px;
+    width:95px;
     padding:6px;
     border-radius:32px;
     text-align:center;
@@ -156,8 +190,8 @@ body {
 .setBtn:hover{
     border:solid black;
     margin-left:1em;
-    height:20px;
-    width:75px;
+    height:50px;
+    width:95px;
     padding:6px;
     border-radius:32px;
     text-align:center;
@@ -250,5 +284,25 @@ box-shadow: 5px 5px 22px 6px #5B45FF;
     font-size: 65px;
 }
 .shakeAble{
-    animation: shake 1s ease 2;
+    animation: shake 1s ease 6;
+}
+.initiateAttack{
+    animation: moveLeft 5s ease 1;
+    height:180px;
+    width:180px;
+}
+.initiateAttack2{
+    animation: moveRight 5s ease 1;
+    height:180px;
+    width:180px;
+}
+
+.newLevel{
+    background-image: url('https://i.gifer.com/N4J.gif');
+
+    /* background-size: cover; */
+    
+}
+.zero{
+    /* background-image:url('https://c.tenor.com/H1a9GuvqoIgAAAAC/super-smash-bros-ultimate-smash-bro.gif') */
 }
