@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+      <h1 class="titleMain">Title Main </h1>
+    <div class="utilContainer">
+      <div class="pOneHp">
+        <div class="hpTop">100%</div>
+        <div class="hpMid"></div>
+        <div class="hpLow"></div>
+      </div>
+      <!-- gameboard -->
+      <div class="gameboard">
+        <!-- scoreBoard -->
+        <div class="scoreboard">
+          <h1>Score: <span class="points"> 0 </span></h1>
+        </div>
+
+        <div class="actionBubble"></div>
+
+        <div class="battleZone">
+          <div class="pOne">1000
+              <img src="https://thumbs.gfycat.com/NarrowAcidicBaboon-max-1mb.gif" alt="" class="pWon">
+          </div>
+
+          <div class="pTwo">1000
+            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8cbabdda-80b4-4926-ac0f-1b71cc9d64dd/de5kxig-2f6c3641-83a9-4b01-a809-70c288bcf1cd.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzhjYmFiZGRhLTgwYjQtNDkyNi1hYzBmLTFiNzFjYzlkNjRkZFwvZGU1a3hpZy0yZjZjMzY0MS04M2E5LTRiMDEtYTgwOS03MGMyODhiY2YxY2QuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.PJcEsXxyUM8JSMuDE-1vEIzELfWc0LeE-ZhJZaKXu0g" alt="" class="pToo">
+          </div>
+        </div>
+      </div>
+      <!-- gameboardEND -->
+
+      <!-- pONe HPbar   ptWo HPbar -->
+      <div class="pTwoHp">
+        <div class="hpTop">100%</div>
+        <div class="hpMid"></div>
+        <div class="hpLow"></div>
+      </div>
+    </div>
+
+    <!-- actionBubble -->
+
+    <!-- controller -->
+    <div class="controlPanel">
+        
+        <div class="arrowContainer">
+            <div class="arrow">^</div>
+            <div class="switch">
+                <div class="arrowM"> < </div>
+                <div class="arrowM"> > </div>
+            </div>
+            <div class="arrow">v</div>
+        </div>
+
+        <div class="settingsContainer">
+            <div class="setBtn" onclick="startGame()">Start</div>
+            <div class="setBtn"> Select </div>
+        </div>
+
+        <div class="actionContainer">
+            <div class="actionBtn" onclick=""> A </div>
+
+            <div class="actionBtn"> B </div>
+        </div>
+    </div>
+
+    <!-- chooseMap -->
+    <button class="map"> Choose Map </button>
+    <!-- selectCharacter  -->
+    <button class="select">Select Character</button>
+    <!-- zeroGravityMode -->
+
+    <button class="zero">Zero Gravity Mode</button>
+
+    <script src="app.js"></script>
+  </body>
+</html>
