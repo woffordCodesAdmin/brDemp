@@ -135,8 +135,8 @@ body {
 .pOne,
 .pTwo {
   /* border: solid blue; */
-  height: 90px;
-  width: 90px;
+  height: 40px;
+  width: 40px;
   color:yellow;
   border-radius: 50%;
   text-align: center;
