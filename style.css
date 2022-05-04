@@ -74,7 +74,8 @@ body {
   border: solid yellow;
   border-width:.2px;
   /* border-radius: 22px; */
-  color:lime;
+  color:red;
+  font-size:32px;
   margin:22px;
   margin-top:0%;
   width:30px;
@@ -152,7 +153,7 @@ body {
     border-radius:23px;
     margin:3em;
     margin-left:10%;
-    /* width:50%; */
+    width:80%;
     background-color:grey;
     /* justify-content: space-between; */
     display:flex;
@@ -162,7 +163,7 @@ body {
     border:solid red;
     border-radius:22px;
     background-color: #333C3F;;
-    width:25%;
+    width:16%;
     margin:1em;
     margin-left:10%;
     padding:1em;
@@ -177,7 +178,7 @@ body {
 .setBtn{
     border:solid black;
     margin-left:1em;
-    height:50px;
+    height:40px;
     width:95px;
     padding:6px;
     border-radius:32px;
@@ -185,7 +186,7 @@ body {
     padding-bottom: 5px;;
     background-color:#333C3F;
     color:white;
-    margin-top:22px;
+    margin-top:42px;
 }
 .setBtn:hover{
     border:solid black;
@@ -213,6 +214,7 @@ box-shadow: 5px 5px 14px 6px #3892FF;
     border-radius:50%;
     border:solid purple;
     margin:1em;
+    margin-top:42px;
     border-width:6px;
     height:40px;
     width:40px;
